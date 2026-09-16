@@ -1,0 +1,2376 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MF Placas Antihumedad</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#c4c6ce",
+              "inverse-primary": "#b0c8eb",
+              "secondary-fixed": "#cce5ff",
+              primary: "#000f22",
+              "on-primary-fixed-variant": "#314865",
+              background: "#f8f9ff",
+              "primary-fixed": "#d2e4ff",
+              secondary: "#006398",
+              "on-error": "#ffffff",
+              "surface-container-low": "#eff4ff",
+              surface: "#f8f9ff",
+              "on-background": "#0b1c30",
+              "primary-fixed-dim": "#b0c8eb",
+              "surface-container-high": "#dce9ff",
+              "secondary-container": "#5bb8fe",
+              "primary-container": "#0a2540",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#00a149",
+              "on-secondary-fixed": "#001d31",
+              error: "#ba1a1a",
+              "on-primary": "#ffffff",
+              "tertiary-fixed-dim": "#3de273",
+              tertiary: "#001304",
+              "on-surface-variant": "#43474d",
+              "surface-bright": "#f8f9ff",
+              "inverse-surface": "#213145",
+              "surface-variant": "#d3e4fe",
+              "on-primary-fixed": "#001c37",
+              "surface-dim": "#cbdbf5",
+              "error-container": "#ffdad6",
+              "surface-tint": "#49607e",
+              "on-tertiary-fixed-variant": "#005322",
+              "on-surface": "#0b1c30",
+              "on-tertiary-fixed": "#002109",
+              "on-secondary-fixed-variant": "#004b73",
+              "secondary-fixed-dim": "#93ccff",
+              "inverse-on-surface": "#eaf1ff",
+              "on-secondary-container": "#00476e",
+              outline: "#74777e",
+              "on-error-container": "#93000a",
+              "surface-container": "#e5eeff",
+              "on-primary-container": "#768dad",
+              "surface-container-highest": "#d3e4fe",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#66ff8e",
+              "tertiary-container": "#002b0e",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-md": "2rem",
+              "space-sm": "0.5rem",
+              "margin-lg": "3rem",
+              "space-lg": "1.5rem",
+              margin: "1rem",
+              "space-xl": "2.5rem",
+              gutter: "1rem",
+              "space-xs": "0.25rem",
+              "gutter-lg": "1.5rem",
+              "space-md": "1rem",
+            },
+            fontFamily: {
+              "body-md": ["Plus Jakarta Sans"],
+              "title-lg": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "headline-xl-mobile": ["Plus Jakarta Sans"],
+              "body-sm": ["Plus Jakarta Sans"],
+              "title-md": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+              "headline-lg-mobile": ["Plus Jakarta Sans"],
+              "label-md": ["Plus Jakarta Sans"],
+              "headline-xl": ["Plus Jakarta Sans"],
+              "body-lg": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "label-lg": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+              "title-lg": ["18px", { lineHeight: "24px", fontWeight: "600" }],
+              "headline-md": [
+                "22px",
+                { lineHeight: "28px", fontWeight: "700" },
+              ],
+              "headline-xl-mobile": [
+                "30px",
+                { lineHeight: "38px", fontWeight: "800" },
+              ],
+              "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
+              "title-md": ["16px", { lineHeight: "22px", fontWeight: "600" }],
+              "headline-lg": [
+                "32px",
+                { lineHeight: "40px", fontWeight: "700" },
+              ],
+              "headline-lg-mobile": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "700" },
+              ],
+              "label-md": ["12px", { lineHeight: "16px", fontWeight: "600" }],
+              "headline-xl": [
+                "44px",
+                { lineHeight: "52px", fontWeight: "800" },
+              ],
+              "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+              "label-sm": ["10px", { lineHeight: "14px", fontWeight: "700" }],
+              "label-lg": ["14px", { lineHeight: "20px", fontWeight: "700" }],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-surface text-on-surface font-body-md text-body-md">
+    <header
+      class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+    >
+      <div
+        class="w-full bg-primary-container text-surface-container-lowest py-space-xs px-margin text-center font-label-md text-label-md flex items-center justify-center gap-space-sm"
+      >
+        <span
+          class="material-symbols-outlined text-secondary-container text-[16px]"
+          >location_on</span
+        ><span class=""
+          >Fábrica y colocación en Glew y toda Zona Sur • Consultas directas al
+          instante</span
+        >
+      </div>
+      <div class="h-20 bg-surface/90 backdrop-blur-xl">
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-12 h-full flex items-center justify-between gap-space-md"
+        >
+          <div class="flex items-center gap-space-md">
+            <img
+              alt="MF Placas Antihumedad Logo"
+              class="h-8 w-auto object-contain"
+              src="https://lh3.googleusercontent.com/aida/AEtjO1UDfOh7ciJsRTyLVo7B-rGDyIZDviEeQ3kkXWvCeGmuogSR0ZviMsrC4R1T9FfxjPTxZqIByFW8V53ue2MJAtGO2qa2oWemdShk6vojE8hVQOoKgUjGq4ekf8OBHeyEv4v9R-PAMKoByIVVUTj-uoA0orRqgAFB-4OG8xAQIgfH-AVJOyD0wA6KKj7blUTroFJoM7-t3gUS1c6221u8n8fJdJbpDg0NM3U9XC1FAp8CNmjr1NsrSwYRI7ru"
+            />
+            <div class="flex flex-col">
+              <span
+                class="font-title-lg text-title-lg text-primary tracking-tight leading-none"
+                >MF Placas</span
+              ><span
+                class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider"
+                >Antihumedad</span
+              >
+            </div>
+          </div>
+          <nav
+            class="hidden xl:flex items-center gap-space-lg"
+            data-active-classes="text-secondary font-bold"
+          >
+            <a
+              aria-current="page"
+              class="transition-colors text-secondary font-bold"
+              data-path="inicio"
+              href="#"
+              >Inicio</a
+            ><a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-title-md text-title-md"
+              data-path="beneficios"
+              href="#beneficios"
+              >Beneficios</a
+            ><a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-title-md text-title-md"
+              data-path="modelos"
+              href="#modelos"
+              >Modelos</a
+            ><a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-title-md text-title-md"
+              data-path="antes-y-despues"
+              href="#trabajos-reales"
+              >Antes y Después</a
+            ><a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-title-md text-title-md"
+              data-path="lista-de-precios"
+              href="#lista-de-precios"
+              >Lista de Precios</a
+            ><a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-title-md text-title-md"
+              data-path="promo-10m2"
+              href="#promo-10m2"
+              >Promo 10m²</a
+            ><a
+              class="text-on-surface-variant hover:text-on-surface transition-colors font-title-md text-title-md"
+              data-path="local-y-contacto"
+              href="#local-y-contacto"
+              >Local y Contacto</a
+            >
+          </nav>
+          <div class="flex items-center gap-space-md">
+            <a
+              class="bg-[#25D366] hover:bg-[#22C55E] text-surface-container-lowest font-label-lg text-label-lg px-space-md py-space-sm rounded-full shadow-[0_4px_12px_rgba(37,211,102,0.3)] transition-all flex items-center gap-space-xs"
+              href="https://wa.me/5491133582953"
+              target="_blank"
+              ><span class="material-symbols-outlined text-[20px]">chat</span
+              ><span class="hidden sm:inline">Cotizar por WhatsApp</span
+              ><span class="sm:hidden">WhatsApp</span></a
+            >
+            <div
+            
+             
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-28 bg-surface">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION -->
+        <section
+          class="relative w-full overflow-hidden bg-surface py-space-xl lg:py-20"
+        >
+          <div
+            class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"
+          ></div>
+          <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Text Left -->
+              <div class="lg:col-span-7 flex flex-col items-start text-left">
+                <div
+                  class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed mb-space-md font-label-md text-label-md"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >verified</span
+                  >
+                  <span class=""
+                    >Fábrica Directa en Glew • Garantía y Calidad</span
+                  >
+                </div>
+                <h1
+                  class="font-headline-xl text-headline-xl text-primary tracking-tight leading-tight mb-space-md"
+                >
+                  Eliminá la Humedad de tus Paredes
+                  <span class="text-secondary">Definitivamente</span>
+                </h1>
+                <p
+                  class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-lg leading-relaxed"
+                >
+                  Placas antihumedad decorativas de máxima absorción y
+                  evaporación progresiva. Fabricación directa en Glew, Zona Sur.
+                  Calidad que se ve, resultados que duran sin romper tus
+                  revoques.
+                </p>
+                <!-- Trust Badges List -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm w-full mb-space-lg"
+                >
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px]"
+                      >local_fire_department</span
+                    >
+                    <span class="font-label-md text-label-md text-on-surface"
+                      >100% Ignífugas y atérmicas</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px]"
+                      >workspace_premium</span
+                    >
+                    <span class="font-label-md text-label-md text-on-surface"
+                      >Yeso cerámico de 1ra</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest shadow-sm"
+                  >
+                    <span
+                      class="material-symbols-outlined text-secondary text-[20px]"
+                      >cleaning_services</span
+                    >
+                    <span class="font-label-md text-label-md text-on-surface"
+                      >Colocación limpia en el día</span
+                    >
+                  </div>
+                </div>
+                <!-- CTAs -->
+                <div
+                  class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md w-full sm:w-auto"
+                >
+                  <a
+                    class="bg-[#25D366] hover:bg-[#22C55E] text-surface-container-lowest font-label-lg text-label-lg px-space-lg py-space-md rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-space-sm transform hover:-translate-y-0.5"
+                    href="https://wa.me/5491133582953?text=Hola%20MF%20Placas,%20quiero%20solicitar%20un%20presupuesto%20sin%20cargo"
+                    target="_blank"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >chat</span
+                    >
+                    <span class="">Solicitar Presupuesto sin Cargo</span>
+                  </a>
+                  <a
+                    class="bg-primary-container text-surface-container-lowest hover:bg-primary font-label-lg text-label-lg px-space-lg py-space-md rounded-lg shadow-sm transition-all text-center"
+                    href="#modelos"
+                  >
+                    Ver Modelos y Precios
+                  </a>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm mt-space-md text-on-surface-variant font-body-sm text-body-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-[#00a149] text-[18px]"
+                    >verified_user</span
+                  >
+                  <span class=""
+                    >Más de 1.200 hogares recuperados en Almirante Brown y Zona
+                    Sur</span
+                  >
+                </div>
+              </div>
+              <!-- Showcase Visual Right -->
+              <div class="lg:col-span-5 relative">
+                <div
+                  class="relative mx-auto rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest p-space-sm"
+                >
+                  <img
+                    alt="Placa antihumedad textura rústica instalada en ambiente con terminación decorativa"
+                    class="w-full h-96 sm:h-[440px] object-cover rounded-lg"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHCJu3aN4XkTrr02w5OlYuIyV6q1ho0xIPEhRDklCWwiTwUYof9j68yyXj8YtrrG5AI2S3dGg510iTsD1VpUZpjemVrYo0pdoSOgNVGUbNa5xyTJ8cJZcJSTZLVgQgRplxffI6adDKgPr1DRD9m2svwgwrf5L_mG4ODkEIOiBo2kllb92FDCmusIAeeb89AHIvpcIQmgWflPbiKQhQC94CYlaFRcqS325ch6t7MG5qd1qwHEtZw_pD4jUWDnkNybmUGuA"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent pointer-events-none rounded-lg"
+                  ></div>
+                  <div
+                    class="absolute bottom-6 left-6 right-6 flex flex-col gap-space-xs text-surface-container-lowest"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container"
+                      >Showroom • Acabado Real</span
+                    >
+                    <span class="font-title-lg text-title-lg font-bold"
+                      >Muro libre de humedad y condensación</span
+                    >
+                    <p
+                      class="font-body-sm text-body-sm text-surface-container-highest"
+                    >
+                      Tratamiento microrrespirable continuo para toda la vida.
+                    </p>
+                  </div>
+                </div>
+                <!-- Floating Badges -->
+                <div
+                  class="absolute -bottom-4 -left-4 bg-surface-container-lowest rounded-lg p-space-sm shadow-xl flex items-center gap-space-sm border border-surface-container"
+                >
+                  <div
+                    class="w-10 h-10 rounded-full bg-[#e6f8ed] flex items-center justify-center text-[#00a149]"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >task_alt</span
+                    >
+                  </div>
+                  <div>
+                    <div
+                      class="font-title-md text-title-md text-primary font-bold"
+                    >
+                      Garantía Total
+                    </div>
+                    <div
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Material certificado MF
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute -top-4 -right-4 bg-primary-container text-surface-container-lowest rounded-lg p-space-sm shadow-xl flex items-center gap-space-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary-container text-[24px]"
+                    >water_drop</span
+                  >
+                  <div class="text-left">
+                    <div class="font-label-lg text-label-lg leading-tight">
+                      Secado Activo
+                    </div>
+                    <div class="font-label-sm text-label-sm text-primary-fixed">
+                      Evapora sin moho
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- QUICK ACTION / HIGHLIGHT BANNER -->
+        <section
+          class="w-full bg-primary-container text-surface-container-lowest py-space-md"
+        >
+          <div
+            class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-wrap items-center justify-between gap-space-md"
+          >
+            <div class="flex items-center gap-space-md">
+              <span
+                class="material-symbols-outlined text-secondary-container text-[36px]"
+                >energy_savings_leaf</span
+              >
+              <div>
+                <h2 class="font-title-lg text-title-lg leading-tight">
+                  ¿Paredes frías, con salitre o pintura descascarada?
+                </h2>
+                <p
+                  class="font-body-sm text-body-sm text-surface-container-high"
+                >
+                  Colocamos las placas directamente sobre el muro afectado sin
+                  roturas ni semanas de obra.
+                </p>
+              </div>
+            </div>
+            <a
+              class="inline-flex items-center gap-space-xs bg-surface-container-lowest text-primary font-label-lg text-label-lg px-space-md py-space-sm rounded-full hover:bg-surface-container-low transition-colors shadow-sm"
+              href="tel:1133582953"
+            >
+              <span class="material-symbols-outlined text-[18px]">call</span>
+              <span class="">Llamar Ahora al 11 3358-2953</span>
+            </a>
+          </div>
+        </section>
+        <!-- BENEFICIOS & SOLUCION -->
+        <section
+          class="w-full py-space-xl bg-surface-container-low"
+          id="beneficios"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-space-xl">
+              <span
+                class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold"
+                >Tecnología MF Cerámica</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs"
+              >
+                ¿Por qué elegir las placas antihumedad MF?
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-xs"
+              >
+                Desarrolladas con fórmula balanceada de sulfato cálcico
+                microporoso de alta densidad. Actúan como un pulmón técnico en
+                tu ambiente.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md"
+            >
+              <!-- Benefit 1 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-md"
+                >
+                  <span class="material-symbols-outlined text-[28px]">air</span>
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg text-primary mb-space-xs"
+                >
+                  Eliminación Definitiva
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant flex-1"
+                >
+                  Absorbe la humedad de cimientos, napas o condensación y la
+                  microevapora paulatinamente sin generar olores ni manchas de
+                  hongos.
+                </p>
+                <div
+                  class="mt-space-md pt-space-xs flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >check_circle</span
+                  >
+                  <span class="">Ambiente 100% higiénico</span>
+                </div>
+              </div>
+              <!-- Benefit 2 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-md"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >thermostat</span
+                  >
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg text-primary mb-space-xs"
+                >
+                  Térmicas y Acústicas
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant flex-1"
+                >
+                  Aislante natural que colabora en mantener la temperatura
+                  interna de tu hogar, reduciendo consumo de calefacción y
+                  filtraciones sonoras.
+                </p>
+                <div
+                  class="mt-space-md pt-space-xs flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >check_circle</span
+                  >
+                  <span class="">Mayor confort diario</span>
+                </div>
+              </div>
+              <!-- Benefit 3 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-md"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >handyman</span
+                  >
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg text-primary mb-space-xs"
+                >
+                  Instalación Limpia
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant flex-1"
+                >
+                  Olvidate de contratar albañiles para picar paredes o acarrear
+                  escombros. La instalación se realiza rápido y de manera
+                  prolija.
+                </p>
+                <div
+                  class="mt-space-md pt-space-xs flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >check_circle</span
+                  >
+                  <span class="">Habitación lista en 24hs</span>
+                </div>
+              </div>
+              <!-- Benefit 4 -->
+              <div
+                class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-space-md"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >savings</span
+                  >
+                </div>
+                <h3
+                  class="font-title-lg text-title-lg text-primary mb-space-xs"
+                >
+                  Economía de Fábrica
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant flex-1"
+                >
+                  Venta mayorista y minorista directo desde nuestro centro en
+                  Glew. Precios transparentes y asesoramiento sin sobreprecios.
+                </p>
+                <div
+                  class="mt-space-md pt-space-xs flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"
+                >
+                  <span class="material-symbols-outlined text-[16px]"
+                    >check_circle</span
+                  >
+                  <span class="">El valor más conveniente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- COMBO ESTRELLA 10 M2 (PROMO DESTACADA) -->
+        <section class="w-full py-space-xl bg-surface relative" id="promo-10m2">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="relative bg-gradient-to-br from-primary-container via-primary to-[#061e38] rounded-2xl shadow-2xl overflow-hidden p-8 lg:p-14 text-surface-container-lowest"
+            >
+              <!-- Background accents -->
+              <div
+                class="absolute top-0 right-0 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"
+              ></div>
+              <div
+                class="absolute bottom-0 left-1/3 w-64 h-64 bg-secondary/20 rounded-full blur-2xl pointer-events-none"
+              ></div>
+              <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10"
+              >
+                <div class="lg:col-span-7 flex flex-col items-start">
+                  <div
+                    class="id=promo flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container/20 text-secondary-container font-label-md text-label-md mb-space-md uppercase tracking-wider"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >local_offer</span
+                    >
+                    <span class="">OFERTA RECOMENDADA • PACK COMPLETO</span>
+                  </div>
+                  <h2
+                    class="font-headline-xl text-headline-xl font-extrabold text-surface-container-lowest leading-tight tracking-tight mb-space-xs"
+                  >
+                    Súper Promo Renovación
+                    <span class="text-secondary-container">10 m²</span>
+                  </h2>
+                  <p
+                    class="font-body-lg text-body-lg text-surface-container-high mb-space-lg"
+                  >
+                    La solución integral predilecta para renovar por completo
+                    una pared principal de dormitorio o sala de estar.
+                  </p>
+                  <div
+                    class="bg-surface-container-lowest/10 backdrop-blur-md p-space-md rounded-xl w-full mb-space-lg"
+                  >
+                    <div
+                      class="text-secondary-container font-label-lg text-label-lg uppercase tracking-wider mb-space-xs"
+                    >
+                      ¿Qué incluye el combo?
+                    </div>
+                    <ul
+                      class="flex flex-col gap-space-xs font-body-md text-body-md"
+                    >
+                      <li
+                        class="flex items-center gap-space-xs text-surface-container-lowest"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[#3de273] text-[20px]"
+                          >check_circle</span
+                        >
+                        <span class=""
+                          ><strong>10 m² de Placas Antihumedad</strong> (modelo
+                          a elección)</span
+                        >
+                      </li>
+                      <li
+                        class="flex items-center gap-space-xs text-surface-container-lowest"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[#3de273] text-[20px]"
+                          >check_circle</span
+                        >
+                        <span class=""
+                          ><strong>Bolsa de Masilla especial</strong> para
+                          sellado y tomado de juntas</span
+                        >
+                      </li>
+                      <li
+                        class="flex items-center gap-space-xs text-surface-container-lowest"
+                      >
+                        <span
+                          class="material-symbols-outlined text-[#3de273] text-[20px]"
+                          >check_circle</span
+                        >
+                        <span class=""
+                          ><strong>Pegamento de alta resistencia</strong> para
+                          máxima adherencia al muro</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="flex items-baseline gap-space-sm mb-space-md">
+                    <span
+                      class="font-headline-md text-headline-md text-surface-container-high"
+                      >POR SOLO</span
+                    >
+                    <span
+                      class="font-headline-xl text-headline-xl font-extrabold text-[#3de273] tracking-tight"
+                      >$120.000</span
+                    >
+                    <span
+                      class="font-label-md text-label-md text-surface-container-high"
+                      >Final</span
+                    >
+                  </div>
+                  <div
+                    class="font-title-md text-title-md italic text-secondary-container mb-space-lg font-semibold"
+                  >
+                    ¡Protegé tu hogar, mejorá tu bienestar!
+                  </div>
+                  <div
+                    class="flex flex-col sm:flex-row items-center gap-space-md w-full sm:w-auto"
+                  >
+                    <a
+                      class="w-full sm:w-auto bg-[#25D366] hover:bg-[#22C55E] text-surface-container-lowest font-label-lg text-label-lg px-space-xl py-space-md rounded-full shadow-lg transition-all flex items-center justify-center gap-space-sm transform hover:scale-105"
+                      href="https://wa.me/5491133582953?text=Hola%20MF%20Placas,%20quiero%20aprovechar%20la%20Súper%20Promo%2010m2%20por%20$120.000"
+                      target="_blank"
+                    >
+                      <span class="material-symbols-outlined text-[24px]"
+                        >chat</span
+                      >
+                      <span class="">Quiero mi Combo 10m² por WhatsApp</span>
+                    </a>
+                    <span
+                      class="font-label-sm text-label-sm text-surface-container-high text-center"
+                      >Entrega rápida en Zona Sur</span
+                    >
+                  </div>
+                </div>
+                <!-- Combo Presentation Right -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                  <div
+                    class="relative w-full max-w-sm rounded-xl overflow-hidden shadow-2xl bg-surface-container-lowest p-space-sm text-on-surface"
+                  >
+                    <img
+                      alt="Pila de placas antihumedad listas para instalación directa"
+                      class="w-full h-72 object-cover rounded-lg mb-space-sm"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBOcz_xjHDvSdL5QirTEaoclGN4lWXbHecfMVfl56EUOXihlCinG8jSeLVQmmWdH-McnQUxayzfusiYNMFm5vLkUU39Yb5vgWWHlqHD-NtrXvfYbWNb5aOtnJqGfwcPalh7Skv6KTfERB5FzND5y-1nq-eATzVajysTSuIdHfIzEtaM_yiom20CKm8gUbNBFZP59dGsP_R6Axu8fAlxVRZzj_n-pXfS3IjAZcvFc4rv8szEpyPykOtTwExkrO50zK4yjg"
+                    />
+                    <div class="p-space-xs flex flex-col gap-space-xs">
+                      <div class="flex justify-between items-center">
+                        <span
+                          class="font-title-md text-title-md font-bold text-primary"
+                          >Kit Completo 10 m²</span
+                        >
+                        <span
+                          class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-space-xs py-0.5 rounded"
+                          >Listo para colocar</span
+                        >
+                      </div>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                      >
+                        Incluye todo lo necesario para revestir y sellar con
+                        terminación impecable.
+                      </p>
+                      <div
+                        class="flex items-center justify-between pt-space-xs border-t border-surface-container text-secondary font-label-md text-label-md"
+                      >
+                        <span class="">Entrega coordinada</span>
+                        <span class="">Glew y alrededores</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CATALOGO DE MODELOS -->
+        <section
+          class="w-full py-space-xl bg-surface-container-low"
+          id="modelos"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md"
+            >
+              <div>
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold"
+                  >Catálogo de Diseños</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs"
+                >
+                  Modelos de Placas Antihumedad
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-2xl"
+                >
+                  Elegí la textura que mejor combine con tu estilo. Todas
+                  nuestras placas están fabricadas con yeso cerámico de máxima
+                  absorción y alta resistencia al impacto.
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md bg-surface-container-lowest px-space-md py-space-sm rounded-lg shadow-sm"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-[20px]"
+                  >palette</span
+                >
+                <span class=""
+                  >Color blanco natural puro (aptas para pintar)</span
+                >
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+              <!-- Model 1 -->
+              <div
+                class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div class="relative overflow-hidden aspect-[4/3]">
+                  <img
+                    alt="Modelo Ladrillo Rústico Murete de placa antihumedad"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsSUd9gVakG-YRy_GCHCZWEXJ3EOPiPw7lb0qZkcSM2GIAyI-Ycd62B4wec-6l4nHOiuqZW48BQlTrUy_73LUJlJMlZ2p9PlWvYnG9Dixn7r8P7FHaYp97RxZpCo07tmh97J9fiKTZq1TSZ_Vc_vT3OZk8pojUpPoFY3M1Oc0LKHohDro_xNMtGkq8hZlXpSTyAA1F3qavkwAUwGcCW8HHix7aov4tVvqmIwHdET-RwY6qVkFY9qjHbXKjX_5m2xekVew"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-primary-container text-surface-container-lowest px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider"
+                  >
+                    Más Elegido
+                  </div>
+                </div>
+                <div class="p-space-lg flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between mb-space-xs">
+                      <h3
+                        class="font-headline-md text-headline-md text-primary"
+                      >
+                        Ladrillo Rústico / Murete
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                    >
+                      Acabado símil piedra ladrillo apilada con relieve
+                      profundo. Otorga calidez y carácter tanto a livings como a
+                      recepciones y quinchos.
+                    </p>
+                    <div
+                      class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs mb-space-md font-body-sm text-body-sm"
+                    >
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Rendimiento:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Alto poder de microevaporación</span
+                        >
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Terminación:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Relieve texturado fino</span
+                        >
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Uso sugerido:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Living, comedores y quinchos</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="w-full bg-secondary hover:bg-primary text-surface-container-lowest font-label-lg text-label-lg py-space-sm rounded-lg text-center transition-colors flex items-center justify-center gap-space-xs"
+                    href="https://wa.me/5491133582953?text=Hola%20MF%20Placas,%20quiero%20consultar%20por%20el%20modelo%20Ladrillo%20Rústico"
+                    target="_blank"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >chat</span
+                    >
+                    <span class="">Consultar por este Modelo</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Model 2 -->
+              <div
+                class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div class="relative overflow-hidden aspect-[4/3]">
+                  <img
+                    alt="Modelo Bloque Romano Travertino placa antihumedad de diseño rectangular"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi0Mb9SDfWznrfNWmyEmdCriOF9Tfluk-060G43ZR8sIbxpEuHiqYoRljN4DL4E6nN_H4jdjl09zzokh3_Dfs0MphcQmaaDPcPvaTHDlEmnBxtXl9otOwz5wwAbbT0g9hgTy14U8R3ZXZpFOlDVW-7rmO2nW1Vv7IgPtR5uQh5hoXI_xoFTIJur3upoZsByiE_WySSt4ahDdBnHsK5iCXxjl6y11ZQuRxScOnYSAN1uxqEsg9LmMcCkWzD5a44R0O_llA"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-secondary text-surface-container-lowest px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider"
+                  >
+                    Línea Moderna
+                  </div>
+                </div>
+                <div class="p-space-lg flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between mb-space-xs">
+                      <h3
+                        class="font-headline-md text-headline-md text-primary"
+                      >
+                        Bloque Romano / Travertino
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                    >
+                      Textura sobria y contemporánea de bloques rectangulares
+                      biselados. Estética minimalista y pulcra que amplía
+                      visualmente cualquier ambiente.
+                    </p>
+                    <div
+                      class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs mb-space-md font-body-sm text-body-sm"
+                    >
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Rendimiento:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Absorción rápida de cimientos</span
+                        >
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Terminación:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Bisel suave rectificado</span
+                        >
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Uso sugerido:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Pasillos, oficinas y dormitorios</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="w-full bg-secondary hover:bg-primary text-surface-container-lowest font-label-lg text-label-lg py-space-sm rounded-lg text-center transition-colors flex items-center justify-center gap-space-xs"
+                    href="https://wa.me/5491133582953?text=Hola%20MF%20Placas,%20quiero%20consultar%20por%20el%20modelo%20Bloque%20Romano"
+                    target="_blank"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >chat</span
+                    >
+                    <span class="">Consultar por este Modelo</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Model 3 -->
+              <div
+                class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
+              >
+                <div class="relative overflow-hidden aspect-[4/3]">
+                  <img
+                    alt="Modelo Sol Radial Flor placa antihumedad de diseño decorativo"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAXxzvaFx4MhAkzPHbelOG9bcwYgEjimG8Vv_YtTRU9_qKVlr1KDpIDv07ZAThvsXij3ccCbeoSU7GnTbnlIQVVjt-pDMOixdKKyscThmKbNS01ruez7R22fHjLg8BCsu6ncatlsRTQbXf8YOB_A79TMVVIfX4xfSeeOEHFg1wHDh39CWG8RMkR4T9dFgDVpMORJ3rgGAVRRaexPZW2TiyxJKv3qq2IJuv2qpjrwseDGq4puEprJGu9KcIeB2WaVfV98I"
+                  />
+                  <div
+                    class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-bold px-space-sm py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider"
+                  >
+                    Decorativo Exclusivo
+                  </div>
+                </div>
+                <div class="p-space-lg flex-1 flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between mb-space-xs">
+                      <h3
+                        class="font-headline-md text-headline-md text-primary"
+                      >
+                        Sol Radial / Flor
+                      </h3>
+                    </div>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant mb-space-md"
+                    >
+                      Patrón artístico con efecto radial expansivo y volumen
+                      central. Una elección distintiva para crear paredes de
+                      acento y respaldos de cama.
+                    </p>
+                    <div
+                      class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs mb-space-md font-body-sm text-body-sm"
+                    >
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Rendimiento:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Máxima porosidad absorbente</span
+                        >
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Terminación:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Figura en sobre relieve</span
+                        >
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-on-surface-variant"
+                          >Uso sugerido:</span
+                        >
+                        <span class="font-semibold text-primary"
+                          >Paredes protagónicas</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    class="w-full bg-secondary hover:bg-primary text-surface-container-lowest font-label-lg text-label-lg py-space-sm rounded-lg text-center transition-colors flex items-center justify-center gap-space-xs"
+                    href="https://wa.me/5491133582953?text=Hola%20MF%20Placas,%20quiero%20consultar%20por%20el%20modelo%20Sol%20Radial"
+                    target="_blank"
+                  >
+                    <span class="material-symbols-outlined text-[18px]"
+                      >chat</span
+                    >
+                    <span class="">Consultar por este Modelo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- LISTA DE PRECIOS & CALCULADORA INTERACTIVA -->
+        <section
+          class="w-full py-space-xl bg-surface relative overflow-hidden"
+          id="trabajos-reales"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-3xl mx-auto mb-space-xl">
+              <div
+                class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md mb-space-sm uppercase tracking-wider font-bold"
+              >
+                <span class="material-symbols-outlined text-[18px]"
+                  >auto_awesome</span
+                ><span class="">Transformaciones Reales • Zona Sur</span>
+              </div>
+              <h2
+                class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs"
+              >
+                Galería de Trabajos: Mirá el Antes y Después
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed"
+              >
+                Casos reales de clientes en Almirante Brown, Glew y Zona Sur que
+                solucionaron definitivamente sus problemas de salitre y humedad
+                de cimientos en menos de 24 horas sin romper la pared.
+              </p>
+            </div>
+            <div class="flex flex-col gap-space-xl mb-space-xl">
+              <!-- Case 1 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-space-md sm:p-space-lg shadow-md border border-surface-container"
+              >
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm mb-space-md border-b border-surface-container gap-space-xs"
+                >
+                  <div>
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[22px]"
+                        >location_on</span
+                      >
+                      <h3
+                        class="font-title-lg text-title-lg text-primary font-bold"
+                      >
+                        Caso 1: Renovación de Pared Bajo Ventana en Glew
+                      </h3>
+                    </div>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Filtración ascendente crónica recuperada por
+                      completo</span
+                    >
+                  </div>
+                  <div
+                    class="inline-flex items-center gap-space-xs text-secondary font-label-sm text-label-sm bg-secondary-fixed/20 px-space-sm py-1 rounded-full font-bold"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >schedule</span
+                    ><span class=""
+                      >Tiempo de colocación: 6 horas • Sin olor • Secado
+                      instantáneo</span
+                    >
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                  <!-- Before -->
+                  <div
+                    class="relative rounded-xl overflow-hidden shadow-sm group"
+                  >
+                    <div class="aspect-[4/3] w-full">
+                      <img
+                        alt="Antes: Pared con filtración y humedad bajo ventana"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvamZJTEVrP3nQ0mo5j8_2bwoz_Gowe0dnSKIpAOeuzY9qEkCr5W5MQpuzsKQ_ruGD8L2_tn3rHIlHuIGwT4TyLqlYvo5t7pS-aLXSbkC9BLdsvQwGs5NFhjFxjTRNn8r8BZhDSYxp1qRtluB-BBEaDFIO4SWcEafDkobXq2MvhwzV7wOL09tF2iZyxMzdXrD6etcqyDc_wauH9RL5QCqXl30Zv3qrRnxgHHCOApXcxqd33HD29viPGQfpIG6W4eeMZfQ"
+                      />
+                    </div>
+                    <div
+                      class="absolute top-3 left-3 bg-error text-on-error font-label-sm text-label-sm px-space-sm py-1 rounded-md shadow-md flex items-center gap-space-xs font-bold uppercase tracking-wider"
+                    >
+                      <span class="material-symbols-outlined text-[14px]"
+                        >warning</span
+                      ><span class=""
+                        >ANTES: Pared con filtración y humedad bajo
+                        ventana</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 inset-x-0 p-space-sm bg-gradient-to-t from-primary-container/80 to-transparent text-surface-container-lowest text-body-sm font-body-sm"
+                    >
+                      Muro con salitre y deterioro por filtraciones antes de la
+                      intervención.
+                    </div>
+                  </div>
+                  <!-- After -->
+                  <div
+                    class="relative rounded-xl overflow-hidden shadow-sm group"
+                  >
+                    <div class="aspect-[4/3] w-full">
+                      <img
+                        alt="Después: Revestida con Placas MF terminadas y zócalo"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9UKtYXZcpn3fkY2VJftAPJRHx8t6G5TALrLSNYkmyCsqIxkHkYSMBAo-i5OtDXolO9hNMtGx1ZGrdSER3BWwMcwqsSgVzNxDJXfkxC_nf_iPNm-ApCRZvQ00lcYrs3wxgX5g6M4QD121dlxsRzMh9iF1mYwgu67kwiae0R8wAuQS6Zoxd4MwSP1YC-JSng_FFvp1PPQdQZB8DB2Sv7x9yl2bTgPOzGhc6hTY8XRU87u46o_n8wxnzLIXwPEHOTDijH9I"
+                      />
+                    </div>
+                    <div
+                      class="absolute top-3 left-3 bg-[#00a149] text-surface-container-lowest font-label-sm text-label-sm px-space-sm py-1 rounded-md shadow-md flex items-center gap-space-xs font-bold uppercase tracking-wider"
+                    >
+                      <span class="material-symbols-outlined text-[14px]"
+                        >check_circle</span
+                      ><span class=""
+                        >DESPUÉS: Revestida con Placas MF terminadas y
+                        zócalo</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 inset-x-0 p-space-sm bg-gradient-to-t from-primary-container/80 to-transparent text-surface-container-lowest text-body-sm font-body-sm"
+                    >
+                      Pared totalmente recuperada con placas atérmicas y secado
+                      continuo.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Case 2 -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-space-md sm:p-space-lg shadow-md border border-surface-container"
+              >
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm mb-space-md border-b border-surface-container gap-space-xs"
+                >
+                  <div>
+                    <div class="flex items-center gap-space-xs">
+                      <span
+                        class="material-symbols-outlined text-secondary text-[22px]"
+                        >location_on</span
+                      >
+                      <h3
+                        class="font-title-lg text-title-lg text-primary font-bold"
+                      >
+                        Caso 2: Solución Definitiva en Paredes Afectadas
+                      </h3>
+                    </div>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                      >Manchas de moho en esquina exterior eliminadas
+                      definitivamente</span
+                    >
+                  </div>
+                  <div
+                    class="inline-flex items-center gap-space-xs text-[#00a149] font-label-sm text-label-sm bg-[#e6f8ed] px-space-sm py-1 rounded-full font-bold"
+                  >
+                    <span class="material-symbols-outlined text-[16px]"
+                      >verified</span
+                    ><span class=""
+                      >Ahorro total en revoques • Garantía 10 años por
+                      escrito</span
+                    >
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                  <!-- Before -->
+                  <div
+                    class="relative rounded-xl overflow-hidden shadow-sm group"
+                  >
+                    <div class="aspect-[4/3] w-full">
+                      <img
+                        alt="TRABAJO REAL: Transformación de Pared con Humedad"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Vo-jfLEDbUkHYxu8jVju_cgK1ciIoNL8oPiJrDqYZJKhCPw9L5eKF5DiIWDG3WoZDBCEZot1pFIixk-p_ZkXQreZmsvXkFH98gAwpNcEGvrG6CibVpUJalTqSIiPhDhWQfcpJThnXiPZadecE8ts86yD7WRsg6J5_qT_iSTkJ4y-3PvDrlL_BhGHQIbUuealxljDR9ORfAZR5A5HRyIKcJJnAWS6G1UEKMCBtd7f2qwqBDTER8yJELgCp-4kviW2xfE"
+                      />
+                    </div>
+                    <div
+                      class="absolute top-3 left-3 bg-secondary text-surface-container-lowest font-label-sm text-label-sm px-space-sm py-1 rounded-md shadow-md flex items-center gap-space-xs font-bold uppercase tracking-wider"
+                    >
+                      <span class="material-symbols-outlined text-[14px]"
+                        >auto_awesome</span
+                      ><span class=""
+                        >TRABAJO REAL: Transformación de Pared con Humedad</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 inset-x-0 p-space-sm bg-gradient-to-t from-primary-container/80 to-transparent text-surface-container-lowest text-body-sm font-body-sm"
+                    >
+                      ¡Dejá la humedad atrás y renová tu hogar con placas
+                      decorativas!
+                    </div>
+                  </div>
+                  <!-- After -->
+                  <div
+                    class="relative rounded-xl overflow-hidden shadow-sm group"
+                  >
+                    <div class="aspect-[4/3] w-full">
+                      <img
+                        alt="TERMINACIÓN IMPECABLE: Revestimiento Antihumedad Definitivo"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyqDpDQ2rwokhoFX6cdg-_kAyhYIIY1Vpoh9mQCaA2TqzauzNSORaktIoW4lPuGiGPFFU5fx7QOsf3M8a4e5bIFDJbIpJgDczX_anE_3aakK1A_1PDBiurH8LbKgsO3aJOg5S19OabxXUFCOHHHQZ5svvMMJEE3QUzCzertnQj3Lfei3wAjGn_MUzlc5KoB-Q-UORMxT66PblMsgl74cuNPTRjPotjvGUvyjjl2giG-CABE2vA8jDMVNCJhI9N6INcDAM"
+                      />
+                    </div>
+                    <div
+                      class="absolute top-3 left-3 bg-[#00a149] text-surface-container-lowest font-label-sm text-label-sm px-space-sm py-1 rounded-md shadow-md flex items-center gap-space-xs font-bold uppercase tracking-wider"
+                    >
+                      <span class="material-symbols-outlined text-[14px]"
+                        >check_circle</span
+                      ><span class=""
+                        >TERMINACIÓN IMPECABLE: Revestimiento Antihumedad
+                        Definitivo</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 inset-x-0 p-space-sm bg-gradient-to-t from-primary-container/80 to-transparent text-surface-container-lowest text-body-sm font-body-sm"
+                    >
+                      Pared de ladrillo hueco revestida y terminada en blanco
+                      puro sin revocar.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Action Banner inside section -->
+            <div
+              class="bg-primary-container text-surface-container-lowest rounded-2xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md shadow-xl border border-secondary/20"
+            >
+              <div class="flex items-center gap-space-md">
+                <div
+                  class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-[28px]"
+                    >photo_camera</span
+                  >
+                </div>
+                <div>
+                  <div class="font-title-lg text-title-lg font-bold">
+                    Mandanos una foto de tu pared afectada por WhatsApp
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-surface-container-high"
+                  >
+                    Te cotizamos la solución exacta y presupuesto en minutos sin
+                    cargo.
+                  </p>
+                </div>
+              </div>
+              <a
+                class="bg-[#25D366] hover:bg-[#22C55E] text-surface-container-lowest font-label-lg text-label-lg px-space-lg py-space-sm rounded-full shadow-md transition-all flex items-center gap-space-xs flex-shrink-0 transform hover:scale-105"
+                href="https://wa.me/5491133582953?text=Hola%20MF%20Placas,%20vi%20la%20galer%C3%ADa%20de%20antes%20y%20despu%C3%A9s.%20Quiero%20consultar%20presupuesto%20para%20mi%20pared"
+                target="_blank"
+                ><span class="material-symbols-outlined text-[20px]">chat</span
+                ><span class="">Consultar presupuesto para mi pared</span></a
+              >
+            </div>
+          </div>
+        </section>
+        <section class="w-full py-space-xl bg-surface" id="lista-de-precios">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-space-xl">
+              <span
+                class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold"
+                >Transparencia Total</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs"
+              >
+                Lista Oficial de Precios y Calculador de costos
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-xs"
+              >
+                Calculá tus materiales al instante o consultá los valores
+                individuales de fábrica sin sorpresas.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start"
+            >
+              <!-- Lista Oficial Estilizada Left -->
+              <div
+                class="lg:col-span-6 bg-surface-container-lowest rounded-2xl p-space-lg shadow-md border border-surface-container"
+              >
+                <div
+                  class="flex items-center justify-between pb-space-sm border-b border-surface-container mb-space-md"
+                >
+                  <div class="flex items-center gap-space-xs">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[26px]"
+                      >receipt_long</span
+                    >
+                    <span
+                      class="font-title-lg text-title-lg text-primary font-bold"
+                      >Precios por Rubro</span
+                    >
+                  </div>
+                  <span
+                    class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-space-sm py-1 rounded-full font-bold"
+                    >Actualizado 2025</span
+                  >
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-semibold"
+                        >
+                          M² de Placas
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Rinde 1 metro cuadrado completo
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-secondary font-bold"
+                    >
+                      $10.000
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-semibold"
+                        >
+                          Placa por Unidad
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Repuestos o cortes específicos
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-secondary font-bold"
+                    >
+                      $2.000
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-semibold"
+                        >
+                          Masilla Chica
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Tomado de juntas básico
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-secondary font-bold"
+                    >
+                      $7.000
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-semibold"
+                        >
+                          Masilla Grande
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Sellado de alta cobertura
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-secondary font-bold"
+                    >
+                      $13.000
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-semibold"
+                        >
+                          Pegamento Medio
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Para instalaciones puntuales
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-secondary font-bold"
+                    >
+                      $7.500
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-semibold"
+                        >
+                          Pegamento Entero
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Máxima adherencia y rendimiento
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-secondary font-bold"
+                    >
+                      $14.000
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary text-surface-container-lowest flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ★
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-bold"
+                        >
+                          Colocación Profesional
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Mano de obra especializada por m²
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-primary font-extrabold"
+                    >
+                      $22.000
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-low transition-colors"
+                  >
+                    <div class="flex items-center gap-space-sm">
+                      <div
+                        class="w-7 h-7 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div
+                          class="font-title-md text-title-md text-primary font-semibold"
+                        >
+                          Moldura / Terminación
+                        </div>
+                        <div
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Remates decorativos para zócalo o techo
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="font-headline-md text-headline-md text-secondary font-bold"
+                    >
+                      $4.000
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Calculador Interactivo Right -->
+              <div
+                class="lg:col-span-6 bg-surface-container-lowest rounded-2xl p-space-lg shadow-md border border-surface-container flex flex-col justify-between"
+              >
+                <div>
+                  <div class="flex items-center gap-space-xs mb-space-xs">
+                    <span
+                      class="material-symbols-outlined text-secondary text-[26px]"
+                      >calculate</span
+                    >
+                    <h3
+                      class="font-title-lg text-title-lg text-primary font-bold"
+                    >
+                      Calculadora de Materiales y Costo
+                    </h3>
+                  </div>
+                  <p
+                    class="font-body-sm text-body-sm text-on-surface-variant mb-space-md"
+                  >
+                    Ingresá las medidas de tu pared para estimar metros
+                    cuadrados y costo aproximado con o sin colocación.
+                  </p>
+                  <!-- Pre-set Buttons -->
+                  <div class="mb-space-md">
+                    <label
+                      class="font-label-md text-label-md text-on-surface block mb-space-xs"
+                      >Metros rápidos comunes:</label
+                    >
+                    <div class="grid grid-cols-4 gap-space-xs">
+                      <button
+                        class="preset-btn py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-secondary-fixed text-on-surface font-label-md text-label-md transition-colors"
+                        onclick="setMetros(5)"
+                        type="button"
+                      >
+                        5 m²
+                      </button>
+                      <button
+                        class="preset-btn py-space-xs px-space-sm rounded-lg bg-secondary-fixed text-on-secondary-fixed font-bold font-label-md text-label-md transition-colors"
+                        onclick="setMetros(10)"
+                        type="button"
+                      >
+                        10 m²
+                      </button>
+                      <button
+                        class="preset-btn py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-secondary-fixed text-on-surface font-label-md text-label-md transition-colors"
+                        onclick="setMetros(15)"
+                        type="button"
+                      >
+                        15 m²
+                      </button>
+                      <button
+                        class="preset-btn py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-secondary-fixed text-on-surface font-label-md text-label-md transition-colors"
+                        onclick="setMetros(20)"
+                        type="button"
+                      >
+                        20 m²
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Custom Inputs -->
+                  <div class="grid grid-cols-2 gap-space-sm mb-space-md">
+                    <div>
+                      <label
+                        class="font-label-sm text-label-sm text-on-surface-variant block mb-1"
+                        for="calc-ancho"
+                        >Ancho (metros):</label
+                      >
+                      <input
+                        class="w-full bg-surface-container-low text-on-surface p-space-sm rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary"
+                        id="calc-ancho"
+                        min="1"
+                        oninput="calculateByDimensions()"
+                        step="0.1"
+                        type="number"
+                        value="4"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        class="font-label-sm text-label-sm text-on-surface-variant block mb-1"
+                        for="calc-alto"
+                        >Alto (metros):</label
+                      >
+                      <input
+                        class="w-full bg-surface-container-low text-on-surface p-space-sm rounded-lg font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary"
+                        id="calc-alto"
+                        min="1"
+                        oninput="calculateByDimensions()"
+                        step="0.1"
+                        type="number"
+                        value="2.5"
+                      />
+                    </div>
+                  </div>
+                  <!-- Checkbox Colocación -->
+                  <div
+                    class="flex items-center gap-space-xs p-space-sm bg-surface-container-low rounded-lg mb-space-md cursor-pointer"
+                    onclick="toggleColocacion()"
+                  >
+                    <input
+                      checked=""
+                      class="w-4 h-4 text-secondary rounded cursor-pointer"
+                      id="check-colocacion"
+                      type="checkbox"
+                    />
+                    <label
+                      class="font-label-md text-label-md text-primary cursor-pointer select-none"
+                      for="check-colocacion"
+                    >
+                      Incluir Mano de Obra y Colocación Profesional ($22.000 /
+                      m²)
+                    </label>
+                  </div>
+                  <!-- Resumen Calculation Box -->
+                  <div
+                    class="bg-surface-container p-space-md rounded-xl mb-space-lg"
+                  >
+                    <div class="flex items-center justify-between mb-space-xs">
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Superficie Total:</span
+                      >
+                      <span
+                        class="font-title-md text-title-md font-bold text-primary"
+                        id="res-m2"
+                        >10 m²</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between mb-space-xs">
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Placas estimadas:</span
+                      >
+                      <span
+                        class="font-title-md text-title-md text-primary"
+                        id="res-placas"
+                        >Aprox. 60 unidades (10 m²)</span
+                      >
+                    </div>
+                    <div class="flex items-center justify-between mb-space-xs">
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Adhesivo y Masilla:</span
+                      >
+                      <span
+                        class="font-title-md text-title-md text-primary"
+                        id="res-kits"
+                        >Masilla + Pegamento proporcional</span
+                      >
+                    </div>
+                    <div
+                      class="pt-space-sm mt-space-sm border-t border-outline-variant/30 flex items-baseline justify-between"
+                    >
+                      <div>
+                        <div
+                          class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant"
+                        >
+                          Presupuesto Estimado:
+                        </div>
+                        <div class="font-label-sm text-label-sm text-secondary">
+                          Materiales + Instalación
+                        </div>
+                      </div>
+                      <div
+                        class="font-headline-lg text-headline-lg font-extrabold text-primary"
+                        id="res-total"
+                      >
+                        $340.000
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="w-full bg-[#25D366] hover:bg-[#22C55E] text-surface-container-lowest font-label-lg text-label-lg py-space-md rounded-full text-center transition-all flex items-center justify-center gap-space-xs shadow-md"
+                  href="https://wa.me/5491133582953?text=Hola%20MF%20Placas%2C%20calcul%C3%A9%20en%20la%20web%2010%20m%C2%B2%20con%20colocaci%C3%B3n%20(aprox.%20%24340.000).%20%C2%BFMe%20pueden%20asesorar%3F"
+                  id="btn-calc-whatsapp"
+                  target="_blank"
+                >
+                  <span class="material-symbols-outlined text-[22px]"
+                    >chat</span
+                  >
+                  <span class="">Enviar este Cálculo a WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- LOCAL Y SHOWROOM EN GLEW -->
+        <section
+          class="w-full py-space-xl bg-surface-container-low"
+          id="local-y-contacto"
+        >
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center"
+            >
+              <!-- Local Real Image Left -->
+              <div class="lg:col-span-6 relative">
+                <div
+                  class="rounded-2xl overflow-hidden shadow-xl bg-surface-container-lowest p-space-sm"
+                >
+                  <img
+                    alt="Fachada del local comercial y fábrica MF Placas Antihumedad en Glew"
+                    class="w-full h-[420px] object-cover rounded-xl"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuByF6Sn5peDmf9PcrZqAWYyFCQ3mezxFvv5gT32xmjc-81wcx9NecwCDiEx1GK1LaKyPZmITv3a6SI325rmHvsDVmaTqDtVXN0hvt4EnqpQmsnmg32ccgNHuaDxVVizaxzTa1OigTB12_ZPd60kiiNClSmUV2ZTn8D5sjQmCab2AjQ5cEE7e9A_2HCABAwZkzX47vkIBLBvN9BZ-Qs89kop84SLnxZiHHRCDv7huDkIgBbkHbIkvsTv5ZnAx_g6t0GNKJg"
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-4 right-4 bg-primary-container text-surface-container-lowest p-space-md rounded-xl shadow-lg flex items-center gap-space-sm"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary-container text-[28px]"
+                    >store</span
+                  >
+                  <div>
+                    <div class="font-title-md text-title-md font-bold">
+                      Showroom en Glew
+                    </div>
+                    <div
+                      class="font-body-sm text-body-sm text-surface-container-high"
+                    >
+                      Partido de Almirante Brown
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Local Details Right -->
+              <div class="lg:col-span-6 flex flex-col items-start">
+                <span
+                  class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold"
+                  >Atención en Persona</span
+                >
+                <h2
+                  class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs mb-space-md"
+                >
+                  Vení a conocer todos los modelos en nuestro local
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed"
+                >
+                  Podés tocar los relieves, comparar espesores y recibir el
+                  asesoramiento técnico de Flor y Mati para determinar
+                  exactamente la cantidad de placas y materiales que requiere tu
+                  proyecto.
+                </p>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-space-md w-full mb-space-lg"
+                >
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm"
+                  >
+                    <div
+                      class="flex items-center gap-space-xs text-secondary mb-space-xs"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >schedule</span
+                      >
+                      <span
+                        class="font-title-md text-title-md text-primary font-bold"
+                        >Horarios de Atención</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      <strong>Lunes a Viernes:</strong> 09:00 a 19:00 hs<br /><strong
+                        >Sábados:</strong
+                      >
+                      10:00 a 13:00 hs
+                    </p>
+                  </div>
+                  <div
+                    class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm"
+                  >
+                    <div
+                      class="flex items-center gap-space-xs text-secondary mb-space-xs"
+                    >
+                      <span class="material-symbols-outlined text-[20px]"
+                        >local_shipping</span
+                      >
+                      <span
+                        class="font-title-md text-title-md text-primary font-bold"
+                        >Zona de Cobertura</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant"
+                    >
+                      Envíos e instalación: Glew, Guernica, Longchamps, Burzaco,
+                      Adrogué, Claypole, San Vicente.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg w-full"
+                >
+                  <span
+                    class="material-symbols-outlined text-[#00a149] text-[24px]"
+                    >pin_drop</span
+                  >
+                  <span class="font-label-md text-label-md text-on-surface"
+                    >San Mariano 720, Glew. Retiro inmediato en fábrica.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ATENCION DIRECTA FLOR & MATI -->
+        <section class="w-full py-space-xl bg-surface">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-space-xl">
+              <span
+                class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold"
+                >Contacto Humano y Directo</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs"
+              >
+                Estamos para ayudarte por WhatsApp
+              </h2>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mt-space-xs"
+              >
+                Hacé click directamente sobre cualquiera de nuestras dos líneas
+                para iniciar la charla.
+              </p>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-space-lg max-w-4xl mx-auto"
+            >
+              <!-- Flor Card -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md border border-surface-container flex flex-col justify-between hover:shadow-xl transition-shadow"
+              >
+                <div>
+                  <div class="flex items-center gap-space-md mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold font-headline-md text-headline-md"
+                    >
+                      F
+                    </div>
+                    <div>
+                      <h3
+                        class="font-title-lg text-title-lg text-primary font-bold"
+                      >
+                        Flor • Ventas y Asesoramiento
+                      </h3>
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Pedidos, stock de modelos y consultas generales</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="p-space-sm bg-surface-container-low rounded-lg mb-space-md"
+                  >
+                    <div
+                      class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"
+                    >
+                      Teléfono Directo
+                    </div>
+                    <div
+                      class="font-title-lg text-title-lg text-primary font-bold"
+                    >
+                      11 3358-2953
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="w-full bg-[#25D366] hover:bg-[#22C55E] text-surface-container-lowest font-label-lg text-label-lg py-space-sm rounded-full text-center transition-all flex items-center justify-center gap-space-xs shadow-md"
+                  href="https://wa.me/5491133582953?text=Hola%20Flor,%20quiero%20hacerte%20una%20consulta%20sobre%20las%20placas%20MF"
+                  target="_blank"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >chat</span
+                  >
+                  <span class="">Hablar con Flor por WhatsApp</span>
+                </a>
+              </div>
+              <!-- Mati Card -->
+              <div
+                class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md border border-surface-container flex flex-col justify-between hover:shadow-xl transition-shadow"
+              >
+                <div>
+                  <div class="flex items-center gap-space-md mb-space-md">
+                    <div
+                      class="w-14 h-14 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center font-bold font-headline-md text-headline-md"
+                    >
+                      M
+                    </div>
+                    <div>
+                      <h3
+                        class="font-title-lg text-title-lg text-primary font-bold"
+                      >
+                        Mati • Técnica y Colocación
+                      </h3>
+                      <span
+                        class="font-body-sm text-body-sm text-on-surface-variant"
+                        >Visitas a obra, cotizaciones por colocación y
+                        logística</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="p-space-sm bg-surface-container-low rounded-lg mb-space-md"
+                  >
+                    <div
+                      class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"
+                    >
+                      Teléfono Directo
+                    </div>
+                    <div
+                      class="font-title-lg text-title-lg text-primary font-bold"
+                    >
+                      11 3870-3470
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="w-full bg-primary hover:bg-primary-container text-surface-container-lowest font-label-lg text-label-lg py-space-sm rounded-full text-center transition-all flex items-center justify-center gap-space-xs shadow-md"
+                  href="https://wa.me/5491138703470?text=Hola%20Mati,%20quiero%20consultar%20por%20presupuesto%20de%20colocación%20en%20obra"
+                  target="_blank"
+                >
+                  <span class="material-symbols-outlined text-[20px]"
+                    >chat</span
+                  >
+                  <span class="">Hablar con Mati por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PREGUNTAS FRECUENTES (FAQ) -->
+        <section class="w-full py-space-xl bg-surface-container-low">
+          <div class="max-w-4xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-space-xl">
+              <span
+                class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold"
+                >Respuestas Rápidas</span
+              >
+              <h2
+                class="font-headline-lg text-headline-lg text-primary tracking-tight mt-space-xs"
+              >
+                Preguntas Frecuentes
+              </h2>
+            </div>
+            <div class="flex flex-col gap-space-sm">
+              <!-- Q1 -->
+              <div
+                class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm"
+              >
+                <details class="group cursor-pointer">
+                  <summary
+                    class="flex items-center justify-between font-title-lg text-title-lg text-primary list-none font-bold"
+                  >
+                    <span class=""
+                      >¿Se pueden colocar sobre paredes con humedad
+                      activa?</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="mt-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Sí, justamente están especialmente diseñadas para eso. El
+                    yeso cerámico de alta absorción absorbe la humedad remanente
+                    del muro y su estructura celular microrespirable la evapora
+                    de manera constante al ambiente en forma imperceptible,
+                    evitando la generación de manchas, hongos y olores a rancio.
+                  </p>
+                </details>
+              </div>
+              <!-- Q2 -->
+              <div
+                class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm"
+              >
+                <details class="group cursor-pointer">
+                  <summary
+                    class="flex items-center justify-between font-title-lg text-title-lg text-primary list-none font-bold"
+                  >
+                    <span class=""
+                      >¿Se pueden pintar las placas luego de instaladas?</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="mt-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Sí, se pueden pintar únicamente con pintura especial al agua
+                    para placas antihumedad o pintura al silicato/siliconada que
+                    no obstruya los poros respirables. En el local te asesoramos
+                    sobre los tonos y productos compatibles.
+                  </p>
+                </details>
+              </div>
+              <!-- Q3 -->
+              <div
+                class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm"
+              >
+                <details class="group cursor-pointer">
+                  <summary
+                    class="flex items-center justify-between font-title-lg text-title-lg text-primary list-none font-bold"
+                  >
+                    <span class=""
+                      >¿Hacen colocación a domicilio y cuánto demoran?</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="mt-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Sí, contamos con cuadrillas de colocadores capacitados en
+                    Glew y todo Zona Sur. Una habitación promedio de 10 a 15
+                    metros cuadrados suele terminarse y quedar lista para
+                    disfrutar en una sola jornada de trabajo, limpia y sin
+                    escombros.
+                  </p>
+                </details>
+              </div>
+              <!-- Q4 -->
+              <div
+                class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm"
+              >
+                <details class="group cursor-pointer">
+                  <summary
+                    class="flex items-center justify-between font-title-lg text-title-lg text-primary list-none font-bold"
+                  >
+                    <span class=""
+                      >¿Cuál es la garantía de los materiales?</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-secondary transition-transform group-open:rotate-180"
+                      >expand_more</span
+                    >
+                  </summary>
+                  <p
+                    class="mt-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed"
+                  >
+                    Nuestras placas se fabrican con materia prima certificada de
+                    sulfato micronizado sin agregados de arena ni áridos que
+                    debiliten la absorción. Tienen años de durabilidad
+                    comprobada en cientos de obras residenciales y comerciales
+                    en Buenos Aires.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- BOTTOM CTA BAR / BANNER -->
+        <section class="w-full bg-surface py-space-xl">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div
+              class="bg-secondary-fixed text-on-secondary-fixed rounded-2xl p-space-lg sm:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-md"
+            >
+              <div class="flex flex-col items-start">
+                <span
+                  class="font-headline-md text-headline-md font-bold text-primary"
+                  >¿Tenés dudas de cuántas placas necesitás?</span
+                >
+                <p
+                  class="font-body-md text-body-md text-on-primary-fixed-variant mt-1"
+                >
+                  Mandanos una foto de tu pared por WhatsApp y te armamos el
+                  presupuesto con materiales y colocación sin compromiso.
+                </p>
+              </div>
+              <a
+                class="bg-[#25D366] hover:bg-[#22C55E] text-surface-container-lowest font-label-lg text-label-lg px-space-lg py-space-md rounded-full shadow-lg transition-transform hover:scale-105 flex items-center gap-space-xs flex-shrink-0"
+                href="https://wa.me/5491133582953?text=Hola,%20les%20envío%20la%20foto%20de%20mi%20pared%20para%20un%20presupuesto"
+                target="_blank"
+              >
+                <span class="material-symbols-outlined text-[24px]"
+                  >photo_camera</span
+                >
+                <span class="">Enviar Foto por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- SCRIPT PARA CALCULADORA INTERACTIVA -->
+        <script>
+          let currentM2 = 10;
+          let includesColocacion = true;
+
+          function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+          }
+
+          function updateCalculator() {
+            const precioPlacaM2 = 10000;
+            const precioColocacionM2 = 22000;
+            const costoPegamentoMasillaEst = 2000;
+
+            let placasM2 = Math.ceil(currentM2);
+            let placasCantidad = placasM2 * 6;
+            let total =
+              placasM2 * precioPlacaM2 + placasM2 * costoPegamentoMasillaEst;
+
+            if (includesColocacion) {
+              total += placasM2 * precioColocacionM2;
+            }
+
+            document.getElementById("res-m2").innerText = `${placasM2} m²`;
+            document.getElementById("res-placas").innerText =
+              `Aprox. ${placasCantidad} unidades (${placasM2} m²)`;
+            document.getElementById("res-kits").innerText =
+              placasM2 >= 10
+                ? "Masilla + Pegamento proporcional"
+                : "Kit inicial proporcional";
+            document.getElementById("res-total").innerText =
+              `$${formatNumber(total)}`;
+
+            const msg = encodeURIComponent(
+              `Hola MF Placas, calculé en la web ${placasM2} m² ${includesColocacion ? "con colocación" : "sin colocación"} (aprox. $${formatNumber(total)}). ¿Me pueden asesorar?`,
+            );
+            document.getElementById("btn-calc-whatsapp").href =
+              `https://wa.me/5491133582953?text=${msg}`;
+          }
+
+          function setMetros(m2) {
+            currentM2 = m2;
+            document.getElementById("calc-ancho").value = m2;
+            document.getElementById("calc-alto").value = 1;
+            updateCalculator();
+          }
+
+          function calculateByDimensions() {
+            const ancho =
+              parseFloat(document.getElementById("calc-ancho").value) || 0;
+            const alto =
+              parseFloat(document.getElementById("calc-alto").value) || 0;
+            const calc = Math.max(1, Math.round(ancho * alto * 10) / 10);
+            currentM2 = calc;
+            updateCalculator();
+          }
+
+          function toggleColocacion() {
+            const check = document.getElementById("check-colocacion");
+            check.checked = !check.checked;
+            includesColocacion = check.checked;
+            updateCalculator();
+          }
+
+          document
+            .getElementById("check-colocacion")
+            .addEventListener("click", function (e) {
+              e.stopPropagation();
+              includesColocacion = this.checked;
+              updateCalculator();
+            });
+
+          updateCalculator();
+        </script>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"
+    >
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg"
+        >
+          <div class="flex flex-col gap-space-sm">
+            <div class="flex items-center gap-space-sm">
+              <img
+                alt="MF Placas Antihumedad Logo"
+                class="h-8 w-auto object-contain"
+                src="https://lh3.googleusercontent.com/aida/AEtjO1UDfOh7ciJsRTyLVo7B-rGDyIZDviEeQ3kkXWvCeGmuogSR0ZviMsrC4R1T9FfxjPTxZqIByFW8V53ue2MJAtGO2qa2oWemdShk6vojE8hVQOoKgUjGq4ekf8OBHeyEv4v9R-PAMKoByIVVUTj-uoA0orRqgAFB-4OG8xAQIgfH-AVJOyD0wA6KKj7blUTroFJoM7-t3gUS1c6221u8n8fJdJbpDg0NM3U9XC1FAp8CNmjr1NsrSwYRI7ru"
+              /><span class="font-title-lg text-title-lg text-primary"
+                >MF Placas</span
+              >
+            </div>
+            <p
+              class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed"
+            >
+              Soluciones definitivas contra la humedad en paredes y techos.
+              Fabricación propia, placas decorativas de máxima absorción y
+              asesoramiento técnico integral en Zona Sur.
+            </p>
+            <div
+              class="flex items-center gap-space-xs text-secondary font-label-md text-label-md"
+            >
+              <span class="material-symbols-outlined text-[18px]">verified</span
+              ><span class="">Garantía de fábrica por 10 años</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">
+              Atención Directa
+            </h4>
+            <div class="flex flex-col gap-space-xs">
+              <a
+                class="flex items-center gap-space-xs text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors"
+                href="tel:1133582953"
+                ><span
+                  class="material-symbols-outlined text-secondary text-[18px]"
+                  >call</span
+                ><span class="">Flor: 11 3358-2953</span></a
+              ><a
+                class="flex items-center gap-space-xs text-on-surface-variant hover:text-secondary font-body-sm text-body-sm transition-colors"
+                href="tel:1138703470"
+                ><span
+                  class="material-symbols-outlined text-secondary text-[18px]"
+                  >call</span
+                ><span class="">Mati: 11 3870-3470</span></a
+              >
+              <div
+                class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"
+              >
+                <span
+                  class="material-symbols-outlined text-secondary text-[18px]"
+                  >schedule</span
+                ><span class=""
+                  >Lunes a Viernes 09:00 a 19:00 hs | Sábados 10:00 a 13:00
+                  hs</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">
+              Ubicación y Cobertura
+            </h4>
+            <div
+              class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm"
+            >
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0"
+                  >home_pin</span
+                ><span class=""
+                  >Fábrica y Showroom: San Mariano 720, Glew, Almirante
+                  Brown.</span
+                >
+              </div>
+              <div class="flex items-start gap-space-xs">
+                <span
+                  class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0"
+                  >local_shipping</span
+                ><span class=""
+                  >Envíos e instalación en todo Zona Sur (Glew, Longchamps,
+                  Burzaco, Adrogué, Guernica, etc.)</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <h4 class="font-title-md text-title-md text-on-surface font-bold">
+              Compromiso de Calidad
+            </h4>
+            <div
+              class="p-space-sm bg-surface-container-lowest rounded-lg shadow-[0_1px_4px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"
+            >
+              <div
+                class="flex items-center gap-space-xs text-primary font-label-md text-label-md"
+              >
+                <span
+                  class="material-symbols-outlined text-[#00a149] text-[20px]"
+                  >shield</span
+                ><span class="">Material Inífugo y Antihumedad</span>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">
+                Secado rápido, eliminación de olores y hongos sin romper las
+                paredes existentes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-space-lg pt-space-md border-t border-surface-container-high flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"
+        >
+          <div class="">
+            © 2026 MF Placas Antihumedad. Todos los derechos reservados. Glew,
+            Buenos Aires.
+          </div>
+          <div class="flex items-center gap-space-md"></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
